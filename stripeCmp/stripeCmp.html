@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Stripe">
+        <div class="slds-var-p-horizontal_small">
+          <div class="stripe"></div>
+        </div>
+      </lightning-card>
+
+      <form>
+        <div class="mb-6 mx-2">
+            <div id="card-element"></div>
+        </div>
+        <div class="mb-2 mx-2">
+            @csrf
+            <input type="hidden" id="payment_method_id" name="payment_method_id" value="">
+            <button type="submit" id="form_submit"> Continue to payment</button>
+        </div>
+    </form>
+    
+</template>
